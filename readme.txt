@@ -2,6 +2,6 @@
 
 - This is a Cypress project created to practice this technology.
 
-Cypress version 9.5.1
+Cypress version 13.13.2
 JavaScript
 Visual Studio Code
