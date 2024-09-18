@@ -24,4 +24,14 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-Cypress.config("defaultCommandTimeout", 20000); // 10 segundos
+// Configuración del tiempo de espera para una respuesta
+Cypress.config("defaultCommandTimeout", 10000); // 10 segundos
+
+// Comando personalizado para acceder más facilmente a un iFrame usado en el Approach 2 del archivo Frames
+Cypress.Commands.add("getIFrame", (iFrame) => {
+  return cy
+    .get(iFrame)
+    .its("0.contentDocument.body")
+    .should("be.visible")
+    .then(cy.wrap);
+});
