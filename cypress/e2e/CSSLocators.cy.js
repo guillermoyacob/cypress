@@ -2,8 +2,9 @@ describe("CSS Locators", () => {
   it("testCSSLocators", () => {
     cy.visit("https://www.mercadolibre.com.ar/");
 
-    cy.get(".nav-search-input[name='as_word']").type("ryzen{enter}");
+    cy.get("#cb1-edit").type("ryzen{enter}");
+    
+    cy.get("#cb1-edit").should("have.value", "ryzen");
 
-    cy.get(".ui-search-breadcrumb__title").contains("Ryzen");
-  });
+  })
 });

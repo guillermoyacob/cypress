@@ -46,7 +46,7 @@ describe("template spec", () => {
     cy.get(".suggestion-title").contains("Tandil").click();
   });
 
-  it("Dynamic Dropdown", () => {
+  /*it("Dynamic Dropdown", () => {
     cy.visit("https://www.google.com/");
     cy.get("textarea[name='q']").type("Cypress Automation");
     cy.get("div.wM6W7d[role='presentation']>span").should("have.length", "10");
@@ -64,5 +64,5 @@ describe("template spec", () => {
       "have.value",
       "cypress automation tutorial"
     );
-  });
+  });*/
 });

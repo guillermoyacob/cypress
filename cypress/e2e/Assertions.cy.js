@@ -39,7 +39,7 @@ describe("Assertions demo", () => {
 
     cy.get("a").should("have.length", "5"); // Que todos los elementos 'a' sean 5
 
-    cy.get('input[placeholder = "Username"]') // Identificamos el input de usuario
+    cy.get('input[placeholder = "username"]') // Identificamos el input de usuario
       .type("Admin") // Escribimos en el input de usuario
       .should("have.value", "Admin"); // Checkeamos que el valor sea el correcto
   });
@@ -49,9 +49,9 @@ describe("Assertions demo", () => {
       "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
     );
 
-    cy.get("input[placeholder='Username']").type("Admin");
+    cy.get("input[placeholder='username']").type("Admin");
 
-    cy.get("input[placeholder='Password']").type("admin123");
+    cy.get("input[placeholder='password']").type("admin123");
 
     cy.get("button[type='submit']").click();
 

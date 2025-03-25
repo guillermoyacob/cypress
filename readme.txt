@@ -5,3 +5,5 @@
 Cypress version 13.13.2
 JavaScript
 Visual Studio Code
+
+*For iframe tests you have to install: npm install cypress-iframe
